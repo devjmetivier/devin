@@ -1,0 +1,34 @@
+{
+  "name": "devin",
+  "version": "1.0.0",
+  "description": "Devin Metivier",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "prepublishOnly": "pnpm build",
+    "go": "node src/index.js",
+    "build": "tsc --target ESNext --module ES6 --outDir src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjmetivier/devin.git"
+  },
+  "author": {
+    "name": "Devin Metivier",
+    "url": "https://devinmetivier.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devjmetivier/devin/issues"
+  },
+  "homepage": "https://github.com/devjmetivier/devin#readme",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  }
+}
