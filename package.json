@@ -1,9 +1,12 @@
 {
   "name": "devin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Devin Metivier",
   "main": "./src/index.js",
   "type": "module",
+  "bin": {
+    "devin": "./src/index.js"
+  },
   "scripts": {
     "prepublishOnly": "pnpm build",
     "go": "node src/index.js",
