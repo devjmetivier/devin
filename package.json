@@ -1,37 +1,42 @@
 {
-  "name": "devin",
-  "version": "1.0.1",
-  "description": "Devin Metivier",
-  "main": "./src/index.js",
-  "type": "module",
-  "bin": {
-    "devin": "./src/index.js"
-  },
-  "scripts": {
-    "prepublishOnly": "pnpm build",
-    "go": "node src/index.js",
-    "build": "tsc --target ESNext --module ES6 --outDir src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devjmetivier/devin.git"
-  },
   "author": {
     "name": "Devin Metivier",
     "url": "https://devinmetivier.com"
   },
-  "license": "MIT",
+  "bin": {
+    "devin": "./src/index.js"
+  },
   "bugs": {
     "url": "https://github.com/devjmetivier/devin/issues"
   },
-  "homepage": "https://github.com/devjmetivier/devin#readme",
   "dependencies": {
-    "boxen": "^6.2.1",
-    "chalk": "^5.0.1"
+    "boxen": "^8.0.1",
+    "chalk": "^5.0.1",
+    "inquirer": "^12.6.1",
+    "open": "^10.1.2"
   },
+  "description": "Devin Metivier",
   "devDependencies": {
-    "@types/node": "^17.0.29",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.3"
-  }
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^22.15.18",
+    "@types/open": "^6.2.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "homepage": "https://github.com/devjmetivier/devin#readme",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "name": "devin",
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjmetivier/devin.git"
+  },
+  "scripts": {
+    "build": "tsc --target ESNext --module ES6 --outDir src",
+    "go": "node src/index.js",
+    "prepublishOnly": "pnpm build"
+  },
+  "type": "module",
+  "version": "1.0.4"
 }
