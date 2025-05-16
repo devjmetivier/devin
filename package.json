@@ -10,14 +10,12 @@
     "url": "https://github.com/devjmetivier/devin/issues"
   },
   "dependencies": {
-    "boxen": "^8.0.1",
-    "chalk": "^5.0.1",
-    "inquirer": "^12.6.1",
-    "open": "^10.1.2"
+    "@clack/prompts": "^0.10.1",
+    "chalk": "^5.0.1"
   },
   "description": "Devin Metivier",
   "devDependencies": {
-    "@types/inquirer": "^9.0.8",
+    "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.15.18",
     "@types/open": "^6.2.1",
     "prettier": "^3.5.3",
@@ -34,9 +32,11 @@
   },
   "scripts": {
     "build": "tsc --target ESNext --module ES6 --outDir src",
+    "format": "biome check . --write --unsafe --diagnostic-level=error && biome format --diagnostic-level=error --write .",
     "go": "node src/index.js",
+    "lint": "pnpm biome lint --write --unsafe --diagnostic-level=error",
     "prepublishOnly": "pnpm build"
   },
   "type": "module",
-  "version": "1.0.4"
+  "version": "1.0.5"
 }
